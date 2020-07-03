@@ -1,0 +1,406 @@
+body {
+  margin: 0px;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 14px;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+}
+a {
+  text-decoration: none;
+  color: #b3b3b3;
+}
+.menu {
+  width: 238px;
+  background-color: #040404;
+  padding-left: 24px;
+  padding-top: 24px;
+  color: #b3b3b3;
+}
+.menu p {
+  font-weight: bold;
+}
+.menu .icon-container {
+  width: 100%;
+  height: 50px;
+  margin-bottom: 10px;
+}
+.menu .icon-container img {
+  width: 131px;
+  height: 40px;
+}
+.menu .options-container .option {
+  display: flex;
+  align-items: center;
+}
+.menu .options-container .option img {
+  margin-right: 15px;
+}
+.menu .options-container .create {
+  margin-bottom: 5px;
+}
+.menu .options-container .liked {
+  margin-bottom: 12px;
+}
+.menu hr {
+  background-color: #b3b3b3;
+  border: none;
+  height: 1px;
+  margin-bottom: 5px;
+}
+.menu .menu-hr {
+  width: 190px;
+  height: 1px;
+}
+.menu .menu-hr hr {
+  border: none;
+  height: 0.5px;
+}
+.menu .playlist {
+  overflow-y: scroll;
+  height: 510px;
+}
+.menu .playlist p {
+  margin-top: 18px;
+}
+.menu .playlist::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+  border-radius: 10px;
+  background-color: #040404;
+}
+.menu .playlist::-webkit-scrollbar {
+  width: 12px;
+  background-color: #040404;
+}
+.menu .playlist::-webkit-scrollbar-thumb {
+  border-radius: 0px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+  background-color: #505050;
+}
+.main {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(180deg, #bb9751 10%, #121212 60%);
+  padding-right: 28px;
+  overflow: scroll;
+}
+.main__header {
+  width: 100%;
+  height: 340px;
+}
+.main__header .navbar {
+  height: 32px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.main__header .navbar__buttons {
+  height: 100%;
+  width: 80px;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 28px;
+  margin-top: 15px;
+}
+.main__header .navbar__buttons div {
+  height: 32px;
+  width: 32px;
+  background-color: rgba(0,0,0,0.7);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main__header .navbar__buttons div img {
+  width: 11px;
+  height: 17px;
+}
+.main__header .navbar__account {
+  height: 85%;
+  width: 130px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(0,0,0,0.75);
+  border-radius: 15px;
+  padding: 3px 5px;
+  padding-right: 9px;
+  margin-top: 15px;
+}
+.main__header .navbar__account img {
+  width: 25px;
+  height: 25px;
+}
+.main__header .navbar__account .account-settings {
+  width: 13px;
+  height: 7px;
+}
+.main__header .navbar__account p {
+  color: #fff;
+  font-size: 15px;
+}
+.main__header .album-information {
+  width: 100%;
+  height: 232px;
+  margin-top: 50px;
+  margin-left: 28px;
+  display: flex;
+  align-items: flex-end;
+}
+.main__header .album-information__left {
+  width: 232px;
+  height: 232px;
+}
+.main__header .album-information__left img {
+  width: 232px;
+  height: 232px;
+  box-shadow: 0 4px 60px rgba(0,0,0,0.5);
+}
+.main__header .album-information__right {
+  width: 100%;
+  height: 200px;
+  margin-left: 20px;
+  align-items: flex-end;
+}
+.main__header .album-information__right p {
+  color: #fff;
+}
+.main__header .album-information__right .type {
+  width: 100%;
+  height: 20px;
+  margin-top: 28px;
+}
+.main__header .album-information__right .type p {
+  font-size: 14px;
+  font-weight: bold;
+}
+.main__header .album-information__right .type-name {
+  width: 100%;
+  height: 100px;
+}
+.main__header .album-information__right .type-name p {
+  font-size: 96px;
+  margin: 0px;
+  font-weight: bolder;
+}
+.main__header .album-information__right .meta {
+  width: 100%;
+  height: 14px;
+  display: flex;
+  align-items: center;
+  margin-top: 33px;
+  font-weight: bold;
+}
+.main__header .album-information__right .meta img {
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  margin-right: 5px;
+}
+.main__header .album-information__right .meta a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 13px;
+  margin-right: 8px;
+  font-weight: bold;
+}
+.main__header .album-information__right .meta p {
+  font-size: 13px;
+  color: #b3b3b3;
+}
+.main__songs {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.2);
+  padding: 24px 28px;
+  padding-right: 28px;
+}
+.main__songs__buttons {
+  display: flex;
+  align-items: center;
+}
+.main__songs__buttons img {
+  margin-right: 32px;
+}
+.main__songs .songlist {
+  width: 100%;
+  height: 100%;
+}
+.main__songs .songlist .song {
+  width: 100%;
+  height: 45px;
+  display: grid;
+  grid-template-columns: 42px 1fr 54px;
+  margin-top: 20px;
+}
+.main__songs .songlist .song .song-icon {
+  height: 100%;
+  width: 42px;
+  display: flex;
+  align-items: center;
+}
+.main__songs .songlist .song .song-icon img {
+  width: 12px;
+  height: 16px;
+  margin-left: 17px;
+  margin-bottom: 18px;
+}
+.main__songs .songlist .song .song-details p {
+  margin: 6px 0px;
+  font-size: 12px;
+  color: #b3b3b3;
+}
+.main__songs .songlist .song .song-details .title {
+  font-size: 14px;
+  color: #fff;
+  font-weight: bold;
+}
+.main__songs .songlist .song .song-time {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.main__songs .songlist .song .song-time p {
+  color: #b3b3b3;
+  font-size: 14px;
+}
+.main::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.1);
+  border-radius: 10px;
+  background-color: rgba(0,0,0,0.1);
+}
+.main::-webkit-scrollbar {
+  width: 12px;
+  background-color: rgba(0,0,0,0.1);
+}
+.main::-webkit-scrollbar-thumb {
+  border-radius: 0px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+  background-color: rgba(250,250,250,0.4);
+}
+.footer {
+  background-color: #282828;
+  width: 100vw;
+  height: 90px;
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer .song-info {
+  width: 472px;
+  margin-left: 16px;
+  display: flex;
+  align-items: center;
+}
+.footer .song-info .album {
+  width: 56px;
+  height: 56px;
+}
+.footer .song-info .album img {
+  width: 100%;
+  height: 100%;
+}
+.footer .song-info .song-name {
+  margin-left: 15px;
+}
+.footer .song-info .song-name p {
+  color: #b3b3b3;
+  font-size: 12px;
+  margin: 0px;
+  margin-bottom: 4px;
+}
+.footer .song-info .song-name p:nth-child(1) {
+  font-size: 14px;
+  font-weight: bolder;
+}
+.footer .song-info .like {
+  width: 18px;
+  height: 17px;
+  margin-left: 25px;
+}
+.footer .song-info .like img {
+  width: 100%;
+  height: 100%;
+}
+.footer .song-button {
+  width: 722px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+}
+.footer .song-button .time {
+  width: 40px;
+  display: flex;
+  align-items: flex-end;
+  text-align: center;
+  color: #b3b3b3;
+  font-size: 12px;
+  margin-left: 15px;
+}
+.footer .song-button .controls {
+  width: 720px;
+}
+.footer .song-button .controls__top {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 19px;
+}
+.footer .song-button .controls__top__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 224px;
+}
+.footer .song-button .controls__top__container .controls-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 32px;
+  height: 32px;
+}
+.footer .song-button .controls__top__container .controls-button img {
+  width: 10px;
+  height: 13px;
+}
+.footer .song-button .controls__top__container .controls-button .play {
+  width: 100%;
+  height: 100%;
+}
+.footer .song-button .controls__botton {
+  width: 100%;
+  height: 3px;
+}
+.footer .song-button .controls__botton hr {
+  background-color: #b3b3b3;
+  border: none;
+  height: 3px;
+}
+.footer .song-volume {
+  width: 372px;
+  height: 32px;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 16px;
+  align-items: center;
+}
+.footer .song-volume div {
+  width: 30px;
+  height: 15px;
+}
+.footer .song-volume div img {
+  width: 15px;
+  height: 13px;
+}
+.footer .song-volume .volumen {
+  width: 84px;
+  margin-bottom: 3px;
+}
+.footer .song-volume .volumen hr {
+  background-color: #b3b3b3;
+  border: none;
+  height: 3px;
+}
